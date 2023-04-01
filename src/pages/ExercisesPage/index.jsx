@@ -10,17 +10,17 @@ export const ExercisesPage = () => {
 
   const BASE_URL = `https://api.api-ninjas.com/v1/exercises?muscle`;
   const images = [
-    "/assets/climbing-min.jpg",
-    "/assets/lifting-min.jpg",
+    "/assets/climbing-min-min.jpg",
+    "/assets/min-img-5-min.jpg",
     "/assets/min-pic-2.jpg",
-    "/assets/min-pic.jpg",
-    "/assets/min-img-4.jpg",
-    "/assets/medium-min.jpg",
-    "/assets/lifting-min.jpg",
-    "/assets/min-img-5.jpg",
-    "/assets/min-img-6.jpg",
-    "/assets/min-img-8.jpg",
-    "/assets/min-img-7.jpg",
+    "/assets/min-img-6-min.jpg",
+    "/assets/min-img-4-min.jpg",
+    "/assets/medium-min-min.jpg",
+    "/assets/min-img-7-min.jpg",
+    "/assets/min-img-5-min.jpg",
+    "/assets/min-img-6-min.jpg",
+    "/assets/min-img-8-min.jpg",
+    "/assets/min-img-7-min.jpg",
   ];
 
   useEffect(() => {
@@ -59,15 +59,18 @@ export const ExercisesPage = () => {
   return (
     <div className={style.exersisesWrapper}>
       <div className={`${style.imageWrapper} position-relative`}>
-        <img className="w-100" src="../../assets/lifting-min.jpg" />
+        <img className="w-100" src="../../assets/lifting-min-min.jpg" />
         <div className={style.bg_Opacity}></div>
       </div>
       <div className={`${style.contentWrapper} container`}>
         <div className="row">
           {data.map((dataItem, index) => (
-            <div className="col-lg-4 col-md-6 col-12 mb-5" key={index}>
+            <div
+              className={`${style.col_margin} col-lg-4 col-md-6 col-12 mb-5`}
+              key={index}
+            >
               <div
-                className={style.exersisesWrapper}
+                className={style.exersisesWrapperCard}
                 onClick={() => setSelectedData(dataItem)}
               >
                 <div className={style.name}>

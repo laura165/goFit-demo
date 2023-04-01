@@ -30,7 +30,7 @@ export const LandingPage = () => {
     <div id="landingPage">
       <div className={`${style.landingConatiner} position-relative`}>
         <div className={`${style.landingImage} position-relative`}>
-          <img className="w-100" src="../../assets/min-img-3.jpg" />
+          <img className="w-100" src="../../assets/min-img-3-min.jpg" />
           <div className={`${style.bg_Opacity}`}></div>
         </div>
 
@@ -64,7 +64,7 @@ export const LandingPage = () => {
               header="Body Bulding With Standart"
               text="Trained Under Best Trainers"
               price="$120"
-              image="../../assets/medium-min.jpg"
+              image="../../assets/medium-min-min.jpg"
             />
             <CardsComponent
               header="Body Bulding With Premium"
@@ -114,7 +114,7 @@ export const LandingPage = () => {
             <div className="d-flex  align-items-center">
               <img
                 className={`${style.first_image} w-100`}
-                src="/assets/min-img-6.jpg"
+                src="/assets/min-img-6-min.jpg"
               />
             </div>
           </div>
@@ -123,13 +123,13 @@ export const LandingPage = () => {
               <div className="pb-5">
                 <img
                   className={`${style.second_image} w-100`}
-                  src="/assets/lifting-min.jpg"
+                  src="/assets/lifting-min-min.jpg"
                 />
               </div>
               <div>
                 <img
                   className={`${style.second_image} w-100`}
-                  src="/assets/min-img-5.jpg"
+                  src="/assets/min-img-5-min.jpg"
                 />
               </div>
             </div>
