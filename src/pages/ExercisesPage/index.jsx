@@ -127,7 +127,7 @@ export const ExercisesPage = () => {
                       onClick={() => setSelectedData(null)}
                     >
                       <img
-                        className={`${style.close_Sign} w-100`}
+                        className={`${style.close_Sign}`}
                         src="/assets/close-modal.svg"
                       />
                     </button>
