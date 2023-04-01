@@ -54,7 +54,9 @@ export const Navigation = () => {
               <div className={style.phone}>
                 <img src="../../assets/telephone.svg" />
               </div>
-              <span className={style.phoneNumber}>+355 67 210 0012</span>
+              <a href="tel:+355 67 210 0012" className={style.phoneNumber}>
+                +355 67 210 0012
+              </a>
             </div>
           </div>
           <div
@@ -63,7 +65,9 @@ export const Navigation = () => {
             <div className={style.phone}>
               <img src="../../assets/telephone.svg" />
             </div>
-            <span className={style.phoneNumber}>+355 67 210 0012</span>
+            <a href="tel:+355 67 210 0012" className={style.phoneNumber}>
+              +355 67 210 0012
+            </a>
           </div>
 
           <div

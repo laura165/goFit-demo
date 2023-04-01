@@ -4,7 +4,7 @@
   .navLinks {
     color: #191a1f !important;
     &:hover {
-      color: #e1cb5e;
+      color: #e1cb5e !important;
     }
   }
   .phoneNumber {
@@ -36,6 +36,10 @@
 .phoneNumber {
   color: white;
   font-weight: 700;
+  text-decoration: none;
+  &:hover {
+    color: #e1cb5e !important;
+  }
 }
 .linkWrapper {
   position: relative;
@@ -61,7 +65,7 @@
       letter-spacing: 2px;
       color: white;
       &:hover {
-        color: #e1cb5e;
+        color: #e1cb5e !important;
       }
     }
   }
@@ -138,11 +142,17 @@
       font-size: 21px !important;
       padding-bottom: 15px;
       padding-left: 20px;
+      &:hover {
+        color: #e1cb5e !important;
+      }
     }
     .phoneNumber {
       color: #191a1f !important;
       font-size: 21px;
       font-weight: 600;
+      &:hover {
+        color: #e1cb5e !important;
+      }
     }
   }
 }
