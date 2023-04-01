@@ -6,12 +6,25 @@ import { useState } from "react";
 export const ContactPage = () => {
   const [form, setForm] = useState({ email: "", textarea: "", select: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState(null);
+
+  const isValidEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
 
   const handleChange = (event) => {
     setForm({
       ...form,
       [event.target.id]: event.target.value,
     });
+
+    if (event.target.id === "email" && !isValidEmail(event.target.value)) {
+      setError("Email is invalid");
+    } else {
+      setError(null);
+    }
+    setEmail(event.target.value);
   };
 
   const handleSubmit = (event) => {
@@ -51,16 +64,20 @@ export const ContactPage = () => {
                   <option value="medium">Medium</option>
                   <option value="pro">Pro</option>
                 </select>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  className={`${style.inputs} w-100`}
-                  placeholder="Email"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                ></input>
+                <div className={style.space}>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    className={`${style.inputs} w-100`}
+                    placeholder="Email"
+                    value={form.email}
+                    onChange={handleChange}
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                  ></input>
+                  {error && <span className={style.error}>{error}</span>}
+                </div>
                 <textarea
                   className={`${style.textarea} w-100`}
                   placeholder="Write Your Message Here..."
