@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./style.module.scss";
 import { useEffect, useState } from "react";
 
-const BACKGROUND_OFFSET = 120;
+const BACKGROUND_OFFSET = 50;
 
 export const Navigation = () => {
   const [isVisible, setIsVisible] = useState(false);
