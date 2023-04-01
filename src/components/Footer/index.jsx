@@ -6,43 +6,39 @@ export const Footer = () => {
     <div>
       <div className="container">
         <div className={`${style.footerWrapper} row`}>
-          <div className="col-lg-10 offset-lg-1">
-            {/* <div className={`${style.promoBox} `}>
-              <img className="w-100" src="../../assets/footer.png" />
-              <div className={style.promoContent}>
-                <h1>Email Newsletters!</h1>
-                <form action="#">
-                  <input
-                    className="form-control"
-                    type="email"
-                    id="mc-email"
-                    placeholder="Your Email"
-                    name="email"
-                    required=""
-                  />
-                  <button className="btn btn-dark subscribe" type="submit">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div> */}
-          </div>
-          <div className={`${style.colum} col-lg-6`}>
-            <h3>Quic Contacts</h3>
-            <p>
-              Rr.Dritan Hoxha, Tirane <br></br> Albania
-            </p>
-            <div>
-              <img src="../../assets/phone.png" />
-              <span>+355 67 210 0012</span>
+          <div className={`${style.colum} col-lg-6 col-md-6`}>
+            <div className="pb-4">
+              <span className={style.header}>Quick Contacts</span>
             </div>
-            <div>
-              <img src="../../assets/phone.png" />
+            <div className="pb-3">
+              <span className={style.text}>
+                Rr.Dritan Hoxha, Tirane <br></br> Albania
+              </span>
+            </div>
+            <div className="d-flex align-items-center">
+              <div className={style.footer_Svg}>
+                <img src="../../assets/telephone.svg" />
+              </div>
               <span>+355 67 210 0012</span>
             </div>
 
-            <div className="d-flex align-items-center">
-              <a href="#" target="_blank">
+            <div className="d-flex align-items-center pt-2">
+              <div className={style.footer_Svg}>
+                <svg
+                  className={style.svg}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                </svg>
+              </div>
+              <span className={style.telephone}>+355 67 210 0012</span>
+            </div>
+
+            <div
+              className={`${style.iconsWrapper} d-flex align-items-center pt-4`}
+            >
+              <a href="https://www.instagram.com/" target="_blank">
                 <div className={style.icon}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +51,7 @@ export const Footer = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#" target="_blank">
+              <a href="https://twitter.com/?lang=en" target="_blank">
                 <div className={style.icon}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +64,7 @@ export const Footer = () => {
                   </svg>
                 </div>
               </a>
-              <a href="#" target="_blank">
+              <a href="https://www.linkedin.com/" target="_blank">
                 <div className={style.icon}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,37 +80,63 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className={`${style.colum} col-lg-6`}>
-            <h3>Popular Tags</h3>
+          <div className={`${style.second_Colum} col-lg-4 col-md-6`}>
+            <div className="pb-4">
+              <span className={style.header}>Popular Tags</span>
+            </div>
+            <div className={style.tags_Wrapper}>
+              <div className={style.tags}>
+                <span>Workout</span>
+              </div>
+              <div className={style.tags}>
+                <span>CrossFit</span>
+              </div>
+              <div className={style.tags}>
+                <span>Shedule</span>
+              </div>
+              <div className={style.tags}>
+                <span>Trainers</span>
+              </div>
+              <div className={style.tags}>
+                <span>Boxing</span>
+              </div>
+              <div className={style.tags}>
+                <span>Shedule</span>
+              </div>
+              <div className={style.tags}>
+                <span>Nutrition</span>
+              </div>
+              <div className={style.tags}>
+                <span>gym</span>
+              </div>
+              <div className={style.tags}>
+                <span>plans</span>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
 
-          {/* <div className={`${style.colum} col-lg-4`}>
-            <h3>Contact Us</h3>
-            <div className="d-flex align-items-start">
-              <img src="../../assets/phone.png" />
-              <div>
-                <p>Mon-Fri 9am-6pm</p>
-                <p>AL: +355 67 210 0012</p>
-                <p>UK: +44 (0)20 4576 8995</p>
-              </div>
-            </div>
-
-            <div className="d-flex align-items-start">
-              <img src="../../assets/rocket.png" />
-              <div>
-                <p>Mon-Fri 9am-6pm</p>
-                <p>AL: +355 67 210 0012</p>
-                <p>UK: +44 (0)20 4576 8995</p>
-              </div>
-            </div>
-          </div> */}
+      <div className={style.footerNav}>
+        <div className={style.children}>
+          <Link to="/" className={style.link}>
+            <div className={style.navLinks}>Home</div>
+          </Link>
+          <Link to="/exercises" className={style.link}>
+            <div className={style.navLinks}>Exercises</div>
+          </Link>
+          <Link to="/contact-us" className={style.link}>
+            <div className={style.navLinks}>Contact Us</div>
+          </Link>
         </div>
       </div>
 
       <div className={style.copyrightBanner}>
         <div className="container">
-          <div>
-            Copyrights © 2023 |<span>Albania Software House</span>
+          <div className="d-flex justify-content-center">
+            <span className={`${style.text} text-align-center`}>
+              © Albania Software House
+            </span>
           </div>
         </div>
       </div>

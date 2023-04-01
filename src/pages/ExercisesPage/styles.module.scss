@@ -1,0 +1,123 @@
+.bg_Opacity {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55;
+}
+
+.imageWrapper {
+  img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+}
+
+.contentWrapper {
+  padding: 100px 0px 100px 0px;
+  //   .exersisesWrapper {
+  //     border: #041116 solid 1px;
+  //     border-radius: 15px;
+  //     padding: 30px;
+  //   }
+  .name {
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    white-space: nowrap;
+    width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 30px;
+    cursor: pointer;
+    &:hover {
+      color: #e1cb5e;
+    }
+  }
+
+  .text {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 26px;
+    color: #041116;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .instructions {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.aspect_Ratio {
+  position: relative;
+  padding-top: 56.25%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.icon {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 20px;
+}
+
+.beginner {
+  height: 10px;
+  border-radius: 16px;
+  background-color: #46b375;
+  width: 30px;
+}
+
+.intermediate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  .item {
+    margin-left: 10px;
+    height: 10px;
+    width: 30px;
+    border-radius: 16px;
+    background-color: red;
+  }
+}
+
+.modal {
+  background-color: rgba(30, 30, 31, 0.65);
+}
+
+.modal_header {
+  border-bottom: none !important;
+  align-items: flex-start !important;
+}
+.modal_Body {
+  padding: 10px 30px 40px 30px;
+}
+
+.selectedName {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+}
+
+.closeModal {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.close_Sign {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}

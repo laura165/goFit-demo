@@ -1,0 +1,125 @@
+.contactWrapper {
+  background-color: #191a1f;
+  background-image: url("../../../public/assets/climbing-min.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50%;
+  padding: 100px 0px 100px 0px;
+}
+
+.header {
+  font-size: 52px;
+  line-height: 58px;
+  color: white;
+}
+.headerUnderline {
+  width: 20%;
+  height: 2px;
+  background-color: #e1cb5e;
+  margin-top: 10px;
+}
+
+.formWrapper {
+  padding-top: 60px;
+  .inputs {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid #e1cb5e;
+    border-radius: 4px;
+    color: #adb5bd !important;
+    &:focus-visible {
+      outline: none !important;
+    }
+    &::placeholder {
+      color: #adb5bd !important;
+      font-size: 14px !important;
+    }
+  }
+  .textarea {
+    margin-bottom: 20px;
+  }
+}
+
+.emailContent {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  .mail {
+    color: white;
+    font-size: 15px;
+  }
+  .telephone {
+    text-decoration: none;
+    color: white !important;
+    padding-left: 20px;
+  }
+}
+.iconsFlex {
+  .icon {
+    fill: #e1cb5e;
+    margin-right: 15px;
+  }
+}
+.selectBox {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #e1cb5e;
+  border-radius: 4px;
+  color: #adb5bd !important;
+  padding: 15px;
+  font-size: 14px !important;
+  &:focus-visible {
+    outline: none !important;
+  }
+  &::placeholder {
+    color: #adb5bd !important;
+    font-size: 14px !important;
+  }
+}
+.textarea {
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid #e1cb5e;
+  border-radius: 4px;
+  padding: 15px;
+  color: #adb5bd !important;
+  &::placeholder {
+    color: #adb5bd !important;
+    font-size: 14px !important;
+  }
+  &:focus-visible {
+    outline: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .contactWrapper {
+    padding: 50px 0px 50px 0px;
+  }
+  .header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .formWrapper {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactWrapper {
+    background-image: none;
+  }
+  // .header {
+  //   font-size: 2px;
+  //   line-height: 28px;
+  // }
+}
+
+.sucess_Email {
+  font-size: 38px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #e1cb5e;
+  text-align: center;
+  padding: 100px 0px 100px 0px;
+}

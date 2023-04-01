@@ -1,7 +1,12 @@
 import { useRoutes } from "react-router-dom";
 
 import { MainLayout } from "../layouts/MainLayout";
-import { ContactPage, ExercisesPage, LandingPage } from "../pages";
+import {
+  ContactPage,
+  ExercisesPage,
+  ExersiseSingle,
+  LandingPage,
+} from "../pages";
 
 export const Router = () =>
   useRoutes([

@@ -1,0 +1,14 @@
+.button_container {
+  background-color: #e1cb5e;
+  padding: 15px;
+  border: 1px solid #e1cb5e;
+  border-radius: 14px;
+  color: #191a1f;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: transparent;
+    color: white;
+  }
+}
